@@ -1,0 +1,10 @@
+// 변수 이름으로 변수 객체 가져오기
+const variable = Entry.variableContainer.getVariableByName('변수이름');
+
+// 변수 값 가져오기
+if (variable) {
+    const value = variable.getValue();
+    console.log('변수 값:', value);
+} else {
+    console.log('변수를 찾을 수 없습니다.');
+}
